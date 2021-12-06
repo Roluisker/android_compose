@@ -1,9 +1,10 @@
 package com.ui.compose
 
-object  Dep {
+object Dep {
     object Versions {
         object Compose {
-            const val Core = "1.0.4"
+            const val Core = "1.0.5"
+            const val Material = "1.0.1"
             const val Foundation = "1.1.0-alpha-06"
             const val Navigation = "2.4.0-alpha10"
             const val RunTime = "1.1.0-alpha06"
@@ -41,12 +42,14 @@ object  Dep {
     object Compose {
         const val Ui = "androidx.compose.ui:ui:${Versions.Compose.Core}"
         const val Runtime = "androidx.compose.runtime:runtime:${Versions.Compose.RunTime}"
-        const val Material = "androidx.compose.material:material:${Versions.Compose.Core}"
+        const val Material = "androidx.compose.material:material:${Versions.Compose.Material}"
         const val Tooling = "androidx.compose.ui:ui-tooling-preview:${Versions.Compose.Core}"
-        const val Navigation = "androidx.navigation:navigation-compose:${Versions.Compose.Navigation}"
+        const val Navigation =
+            "androidx.navigation:navigation-compose:${Versions.Compose.Navigation}"
         const val Activity = "androidx.activity:activity-compose:${Versions.Compose.Activity}"
 
-        const val ViewModel = "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.Compose.LifeCycle}"
+        const val ViewModel =
+            "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.Compose.LifeCycle}"
         const val LiveData = "androidx.compose.runtime:runtime-livedata:${Versions.Compose.RunTime}"
 
         const val Test = "androidx.compose.ui:ui-test-junit4:${Versions.Compose.Core}"
@@ -54,11 +57,17 @@ object  Dep {
     }
 
     object AndroidX {
-        const val Core = "androidx.core:core-ktx:1.6.0"
-        const val AppCompat = "androidx.appcompat:appcompat:1.3.1"
+        const val Core = "androidx.core:core-ktx:1.7.0"
+        const val AppCompat = "androidx.appcompat:appcompat:1.4.0"
         const val Material = "com.google.android.material:material:1.4.0"
-        const val Lifeycycle = "androidx.lifecycle:lifecycle-runtime-ktx:2.3.1"
+        const val Lifeycycle = "androidx.lifecycle:lifecycle-runtime-ktx:2.4.0" //2.3.1
         const val Work = "androidx.work:work-runtime-ktx:${Versions.Work}"
+    }
+
+    object Testing {
+        const val JunitCore = "junit:junit:4.13.2"
+        const val JunitExt = "androidx.test.ext:junit:1.1.3"
+        const val Espresso = "androidx.test.espresso:espresso-core:3.4.0"
     }
 
     object Hilt {
@@ -75,7 +84,8 @@ object  Dep {
     }
 
     object Accompanist {
-        const val SwipeRefresh = "com.google.accompanist:accompanist-swiperefresh:${Versions.Accompanist}"
+        const val SwipeRefresh =
+            "com.google.accompanist:accompanist-swiperefresh:${Versions.Accompanist}"
     }
 
     object ExoPlayer {
