@@ -1,0 +1,1 @@
+/Users/lbejarano/Documents/myExamples/compose/buildSrc/build/classes/kotlin/main/com/ui/compose/Dep$Versions$Compose.class:/Users/lbejarano/Documents/myExamples/compose/buildSrc/build/classes/kotlin/main/com/ui/compose/Dep$Versions.class:/Users/lbejarano/Documents/myExamples/compose/buildSrc/build/classes/kotlin/main/com/ui/compose/Dep.class
